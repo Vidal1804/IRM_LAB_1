@@ -31,13 +31,14 @@ public class SwitchStanceScript : MonoBehaviour
         if (distance < triggerDistance)
         {
             anim.SetBool("isFighting", true);
+            rotateCharacter();
         }
         else
         {
             anim.SetBool("isFighting", false);
+            resetCharacterRotation();
         }
 
-        rotateCharacter();
     }
     else{
         anim.SetBool("isFighting", false);
@@ -56,6 +57,14 @@ public class SwitchStanceScript : MonoBehaviour
         if (direction.sqrMagnitude > 0.001f)
         {
             anim.transform.rotation = Quaternion.LookRotation(direction);
+        }
+    }
+
+    public void resetCharacterRotation()
+    {
+        if (anim != null)
+        {
+            anim.transform.localRotation = Quaternion.Euler(-90f, 0f, 0f);
         }
     }
 }
