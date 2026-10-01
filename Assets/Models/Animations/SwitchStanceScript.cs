@@ -36,9 +36,26 @@ public class SwitchStanceScript : MonoBehaviour
         {
             anim.SetBool("isFighting", false);
         }
+
+        rotateCharacter();
     }
     else{
         anim.SetBool("isFighting", false);
     }
 }
+
+    private void rotateCharacter()
+    {
+        if (anim == null || otherTarget == null) return;
+
+        Vector3 targetPosition = otherTarget.transform.position;
+        targetPosition.y = anim.transform.position.y;
+
+        Vector3 direction = targetPosition - anim.transform.position;
+
+        if (direction.sqrMagnitude > 0.001f)
+        {
+            anim.transform.rotation = Quaternion.LookRotation(direction);
+        }
+    }
 }
