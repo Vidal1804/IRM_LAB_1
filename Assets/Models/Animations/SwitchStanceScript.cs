@@ -1,9 +1,12 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 using Vuforia;
 
 public class SwitchStanceScript : MonoBehaviour
 {
     private float triggerDistance = 0.7f; 
+    private float fightDistance = 0.55f;
+    public int charID = 1;
     private Animator anim;
     public ObserverBehaviour otherTarget; 
     private ObserverBehaviour thisTarget;
@@ -28,20 +31,36 @@ public class SwitchStanceScript : MonoBehaviour
     {
         float distance = Vector3.Distance(transform.position, otherTarget.transform.position);
 
-        if (distance < triggerDistance)
+        if (distance < triggerDistance && distance > fightDistance)
         {
-            anim.SetBool("isFighting", true);
+            anim.SetInteger("AnimState", 1);
             rotateCharacter();
+        }
+        else if(distance < fightDistance)
+        {
+            switch (charID)
+            {
+                case 1:
+                    anim.SetInteger("AnimState", 2);
+                    rotateCharacter();
+                    break;
+                case 2:
+                    anim.SetInteger("AnimState", 3);
+                    rotateCharacter();
+                    break;
+                default:
+                    break;
+            }
         }
         else
         {
-            anim.SetBool("isFighting", false);
+            anim.SetInteger("AnimState", 0);
             resetCharacterRotation();
         }
 
     }
     else{
-        anim.SetBool("isFighting", false);
+        anim.SetInteger("AnimState", 0);
     }
 }
 

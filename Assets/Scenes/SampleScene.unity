@@ -257,6 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a97f85018d38cbc4197bc2edbfca2f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SwitchStanceScript
+  charID: 2
   otherTarget: {fileID: 1077873537}
 --- !u!1 &410087039
 GameObject:
@@ -395,27 +396,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3830d89a322112d4c88b760521a2e957, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.101005994
+      value: 0.2375964
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3830d89a322112d4c88b760521a2e957, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.101005994
+      value: 0.2375964
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3830d89a322112d4c88b760521a2e957, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.101005994
+      value: 0.2375964
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3830d89a322112d4c88b760521a2e957, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0010065995
+      value: 0.00099754
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3830d89a322112d4c88b760521a2e957, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.04
+      value: 0.031222
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3830d89a322112d4c88b760521a2e957, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.098
+      value: 0.21836
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3830d89a322112d4c88b760521a2e957, type: 3}
       propertyPath: m_LocalRotation.w
@@ -646,27 +647,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3830d89a322112d4c88b760521a2e957, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.1064135
+      value: 0.22304268
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3830d89a322112d4c88b760521a2e957, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.1064135
+      value: 0.22304268
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3830d89a322112d4c88b760521a2e957, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.1064135
+      value: 0.22304268
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3830d89a322112d4c88b760521a2e957, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.003
+      value: 0.0029923
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3830d89a322112d4c88b760521a2e957, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.039
+      value: 0.031505
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3830d89a322112d4c88b760521a2e957, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.091
+      value: 0.19377
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3830d89a322112d4c88b760521a2e957, type: 3}
       propertyPath: m_LocalRotation.w
@@ -905,6 +906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a97f85018d38cbc4197bc2edbfca2f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SwitchStanceScript
+  charID: 1
   otherTarget: {fileID: 373334487}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
